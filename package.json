@@ -1,11 +1,11 @@
 {
-  "name": "prismjs",
-  "version": "1.16.0",
+  "name": "@outsystems/prismjs",
+  "version": "1.16.1",
   "description": "Lightweight, robust, elegant syntax highlighting. A spin-off project from Dabblet.",
   "main": "prism.js",
   "style": "themes/prism.css",
   "scripts": {
-    "postinstall": "gulp --gulpfile gulpfile_convert_amd.js",
+    "generate-amd": "gulp --gulpfile gulpfile_convert_amd.js",
     "test:aliases": "mocha tests/aliases-test.js",
     "test:languages": "mocha tests/run.js",
     "test:plugins": "mocha tests/plugins/**/*.js",
@@ -45,7 +45,7 @@
     "yargs": "^13.2.2"
   },
   "jspm": {
-    "main": "prism",
+    "main": "./lib/prism",
     "registry": "jspm",
     "jspmPackage": true,
     "format": "global",

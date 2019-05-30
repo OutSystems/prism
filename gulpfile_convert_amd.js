@@ -1,4 +1,4 @@
-// https://github.com/PrismJS/prism/issues/470
+// Based on: https://github.com/PrismJS/prism/issues/470
 
 var gulp = require('gulp');
 var fs = require('fs');
@@ -8,7 +8,7 @@ var header = require('gulp-header');
 var wrapper = require('gulp-wrapper');
 var concat = require('gulp-concat');
 
-var prism_outdir = './lib/prism';
+var prism_outdir = './lib';
 
 gulp.task("build-prism.css", function() {
   // lets try okaidia.css
